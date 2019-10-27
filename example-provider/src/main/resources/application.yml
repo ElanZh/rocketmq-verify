@@ -3,3 +3,15 @@ spring:
     name: example-provider
 server:
   port: 8080
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: example-verify
+
+
+logging:
+  level:
+    root: info
+    org.springframework.web: error
+    org.apache.rocketmq: debug
